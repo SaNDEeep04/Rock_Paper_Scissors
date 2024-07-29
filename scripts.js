@@ -53,13 +53,14 @@ function playRound(humanChoice,computerChoice){
     
     }
 }
-let humanChoice=getHumanChoice()
-let computerChoice=getComputerChoice()
+let humanChoice
+let computerChoice
 function playGame(n){
-    for(let i=0;i<n;i++){
-        playRound(humanChoice,computerChoice);
+    for(let i=0;i<=n;i++){
         humanChoice=getHumanChoice();
         computerChoice=getComputerChoice();
+        playRound(humanChoice,computerChoice);
+        
     }
     console.log("Human Score:",humanScore);
     console.log("Computer Score:",computerScore)
